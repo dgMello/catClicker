@@ -1,15 +1,31 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Cat Clicker App</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="static/js/script.js"></script>
-  </head>
-  <body>
-    <header>
-      <h1>Cat Clicker App</h1>
-    </header>
-    <section>
-    </section>
-  </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cat Clicker</title>
+</head>
+<body>
+    <ul id="cat-list"></ul>
+    <div id="cat">
+        <h2 id="cat-name"></h2>
+        <div id="cat-count"></div>
+        <img id="cat-img" src="" alt="cute cat">
+    </div>
+    <div>
+      <button type="button" id="admin-button">Admin</button>
+    </div>
+    <div id="newInfoForm" hidden='true'>
+      <form id="form">
+        Name:
+        <input type="text" name="cat-name" value="" id="name-field"><br>
+        ImgUrl:
+        <input type="text" name="image-url" value="" id="imgurl-field"><br>
+        # Clicks:
+        <input type="text" name="clicks" value="" id="clicks-field">
+      </form>
+      <button type="button" form="form" id="save-button">Save</button>
+      <button id="cancel-button">Cancel</button>
+    </div>
+    <script src="static/js/app.js"></script>
+</body>
 </html>
